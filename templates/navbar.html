@@ -2,7 +2,8 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary justify-content-center">
   <div class="container">
     <a class="navbar-brand" href="#">Members</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-responsive">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#nav-responsive">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Responsive Collapse -->
@@ -15,14 +16,18 @@
         <li class="nav-item dropdown" data-ng-repeat="section in sections">
           <button class="nav-link dropdown-toggle" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ section.name }}</button>
           <div class="dropdown-menu" aria-labelledby="dropdown05">
-            <a class="dropdown-item" data-ng-repeat="link in section.links" href="{{ link.href }}" style="padding-top:0em; padding-bottom:0em;"><webicon class="icon" icon="{{ link.icon}}" style="width: 2em; padding-right: 0.5em; margin: 0em;"/>{{ link.name }}</a>
+            <a class="dropdown-item" data-ng-repeat="link in section.links" href="{{ link.href }}"
+              style="padding-top:0em; padding-bottom:0em;">
+              <webicon class="icon" icon="{{ link.icon}}" style="width: 2em; padding-right: 0.5em; margin: 0em;" />{{
+              link.name }}
+            </a>
           </div>
         </li>
 
       </ul>
       <ul class="nav navbar-nav ml-auto">
         <!-- User Dropdown -->
-        <li class="nav-item navbar-user dropdown" >
+        <li class="nav-item navbar-user dropdown">
           <a class="nav-link dropdown-toggle mt-2" data-toggle="dropdown" href="#" id="nav-drop" aria-expanded="false">
             <img alt="user profile image" ng-src="{{profile}}"> {{ name }}
           </a>
@@ -36,6 +41,8 @@
           </div>
         </li>
       </ul>
+    </div>
+    <div id="theme-indicator" style="width: 32px; height: 32px" onClick="toggleTheme(this)">
     </div>
   </div>
 </nav>

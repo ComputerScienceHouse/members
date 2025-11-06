@@ -3,7 +3,11 @@ var app = angular.module("members", ['webicon']);
 app.directive("navbar", function() {
   return {
     restrict: "E",
-    templateUrl: "templates/navbar.html"
+    templateUrl: "templates/navbar.html",
+    link: function (scope, element, attrs) {
+      console.log('hello')
+      element.on('load', toggleTheme(element[0].children[0].firstElementChild.lastElementChild))
+    }
   }
 });
 

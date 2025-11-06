@@ -85,6 +85,11 @@
         "icon": "foundation:comment-quotes"
       },
       {
+        "name": "Devcade Website",
+        "href": "https://devcade.csh.rit.edu",
+        "icon": "fa:gamepad"
+      },
+      {
         "name": "Game Night",
         "href": "https://game-night.csh.rit.edu",
         "icon": "foundation:die-three"
@@ -126,9 +131,9 @@
         "icon": "material:check-box"
       },
       {
-          "name": "HAROLD Audio Selector",
-          "href": "https://audiophiler.csh.rit.edu",
-          "icon": "material:music-note"
+        "name": "HAROLD Audio Selector",
+        "href": "https://audiophiler.csh.rit.edu",
+        "icon": "material:music-note"
       },
       {
         "name": "User Machines",
@@ -145,11 +150,6 @@
         "href": "https://cshrit.slack.com",
         "icon": "fa:slack",
         "popular": true
-      },
-      {
-        "name": "Ballots",
-        "href": "https://ballots.csh.rit.edu",
-        "icon": "material:content-paste"
       },
       {
         "name": "Theme Switcher",
@@ -182,9 +182,19 @@
         "icon": "material:extension"
       },
       {
-	"name": "Resumes",
-	"href": "https://resumes.csh.rit.edu",
-	"icon": "fa:file-text"
+        "name": "Resumes",
+        "href": "https://resumes.csh.rit.edu",
+        "icon": "fa:file-text"
+      },
+      {
+      	"name": "Pings",
+      	"href": "https://pings.csh.rit.edu",
+      	"icon": "material:add-alert"
+      },
+      {
+        "name": "CatJam",
+        "href": "https://catjam.csh.rit.edu",
+        "icon": "webhostinghub:cat"
       }
     ]
   },
@@ -199,15 +209,40 @@
             "href": "https://www.facebook.com/RITCSH/"
           },
           {
-            "name": "Alumni Group",
+            "name": "Private Group",
             "href": "https://www.facebook.com/groups/16764593277/"
+          },
+          {
+            "name": "CSH Hacks Page",
+            "href": "https://www.facebook.com/cshhacks"
           }
+
+          
         ],
         "icon": "brandico:facebook-rect"
       },
       {
+        "name": "Instagram",
+        "dropdown": [
+          {
+            "name": "Primary",
+            "href": "https://www.instagram.com/computersciencehouse/"
+          },
+          {
+            "name": "CSH Hacks",
+            "href": "https://www.instagram.com/cshhacks/"
+          }
+
+        ],
+        "icon": "brandico:instagram-filled"
+      },
+      {
         "name": "Twitter",
         "dropdown": [
+          {
+            "name": "Primary Account",
+            "href": "https://twitter.com/RITCSH"
+          },
           {
             "name": "History",
             "href": "https://twitter.com/CSH_History"
@@ -217,9 +252,10 @@
             "href": "https://twitter.com/OPCOMM"
           },
           {
-            "name": "The Committee",
-            "href": "https://twitter.com/FUMNCommittee"
+            "name": "CSH Hacks",
+            "href": "https://twitter.com/csh_hacks"
           }
+
         ],
         "icon": "brandico:twitter-bird"
       },
@@ -293,7 +329,7 @@
       },
       {
         "name": "CSH Floor Plan",
-        "href": "https://www.rit.edu/facilitiesmanagement/sites/rit.edu.facilitiesmanagement/files/restricted/043-3.pdf"
+        "href": "https://www.rit.edu/facilitiesmanagement/sites/rit.edu.facilitiesmanagement/files/restricted/043-03.pdf"
       }
     ]
   }

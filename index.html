@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <meta http-equiv="refresh" content="300">
     <link rel="icon" type="image/svg" href="https://assets.csh.rit.edu/pubsite/csh_logo_square.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 
     <title>CSH Members Portal</title>
     <!-- Apple Icon -->
@@ -122,5 +123,18 @@
         <side data="meetings" class="col-md-3 col-sm-12"></side>
       </div>
     </div>
+    <script>
+      function toggleTheme(target) {
+        console.log(target)
+        if (document.body.classList.contains("dark-theme")) {
+            document.body.classList.remove('dark-theme');
+            target.innerHTML = '<span class="material-icons-outlined" style="font-size: 32px">dark_mode</span>';
+        }
+        else {
+            document.body.classList.add('dark-theme');
+            target.innerHTML = '<span class="material-icons-outlined" style="font-size: 32px">light_mode</span>';
+        }
+      }
+    </script>
   </body>
 </html>
