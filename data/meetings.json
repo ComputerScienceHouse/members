@@ -2,12 +2,13 @@
   {
     "name": "House",
     "day": "SUN",
-    "time": "7:15"
+    "time": "7:15",
+    "lengthMinutes": 90
   },
   {
     "name": "OpComm",
     "day": "MON",
-    "time": "7:00"
+    "time": "8:30"
   },
   {
     "name": "Social",
@@ -62,7 +63,7 @@
   {
     "name": "Caption Glasses",
     "day": "MON",
-    "time": "8:30"
+    "time": "7:00"
   },
   {
     "name": "Bits 'n Bytes",
