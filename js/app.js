@@ -14,33 +14,60 @@ app.directive("navbar", function() {
 app.filter("sortDate", function(){
   return function(obj) {
     const items = [];
-    const result = [];
-    const today = new Date().getDay()
-    const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
-    angular.forEach(obj, function(val, key) {
-      let relative = days.indexOf(val.day) - today % 7
-      if (relative < 0) {
-        relative = relative + 5 + today
+
+    const now = new Date();
+
+    const today = now.getDay();
+    // NOTE: assumes meetings are always during PM. Subtract 12 hours. 
+    const currentTime = now.getHours() * 60 + now.getMinutes() - 12 * 60;
+    const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    angular.forEach(obj, function(val, _) {
+      let relativeDay = days.indexOf(val.day) - today % 7;
+
+      const timeParts = val.time.split(":");
+      let relativeTime = Number(timeParts[0]) * 60 + Number(timeParts[1]) - currentTime;
+
+      let beginTime = "Beginning Soon (tm)";
+
+      // We don't move meetings that are still going on.
+      const shiftDate = (relativeTime < -val.lengthMinutes && relativeDay == 0) 
+                        || (relativeTime < 0 && relativeDay > 0)
+      if (shiftDate) {
+        relativeTime += 1440;
+        relativeDay--;
       }
-      val.relaDay = relative // day relative to today for sorting
+      if (relativeDay < 0) {
+        relativeDay = relativeDay + 5 + today;
+      }
+
+      if (relativeDay > 0) {
+        const daysUntil = Math.round(relativeDay + relativeTime / 1440)
+        if (daysUntil == 1) {
+          beginTime = "Tomorrow";
+        } else {
+          beginTime = `In ${daysUntil} Days`;
+        }
+      } else if (relativeTime > 60) {
+        beginTime = `In ${Math.round(relativeTime / 60)} Hour${relativeTime >= 90 ? "s" : ""}`;
+      } else if (relativeTime > 5) {
+        beginTime = `In ${Math.round(relativeTime)} Minutes`;
+      } else {
+        // Meeting time is less than 5, and may be negative. 
+        // That means the meeting is going on right now. 
+        beginTime = "RIGHT NOW!"
+      }
+
+      val.relaTime = relativeTime;
+      val.relaDay = relativeDay;
+      val.beginTime = beginTime;
       items.push(val);
 
     });
-
     items.sort(function(a,b){
       if (a.relaDay === b.relaDay) {
-        if (a.time < b.time) {
-          return -1
-        } else {
-          return 1
-        }
+        return a.relaTime - b.relaTime;
       }
-
-      if (a.relaDay < b.relaDay) {
-        return -1
-      } else {
-        return 1
-      }
+      return a.relaDay - b.relaDay;
     })
     return items;
   };
@@ -114,7 +141,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
     $scope.profile = imgStr.concat(response.id_token.preferred_username);
     $scope.name = response.id_token.preferred_username;//response.userinfo.given_name + " " + response.userinfo.family_name;
   }).error(function (error) { 
-  console.error("Error getting sso");
+    console.error("Error getting sso");
     $scope.profile = imgStr.concat("test");
     $scope.name = "Test";
   });
