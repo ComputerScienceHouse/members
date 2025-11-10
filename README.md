@@ -6,6 +6,24 @@ GLORIOUS REDESIGN of the internal CSH Members Portal. Uses [bootstrap-csh](https
 Contributing
 ------------
 
+### Local development
+Set the env variables in your favorite way (I just put them with `ENV VAR_NAME=VALUE` in dockerfile, there might be a better way but idk; be careful not to commit them though)
+
+Ask an RTP for OIDC creds, setting the cookie domain to localhost is needed because that's the domain it stores the cookies for and it freaks out if the domain isn't the same as the server name.
+```
+ENV SERVER_NAME=localhost:8080
+ENV HTTP_SCHEME=http
+ENV OIDC_CLIENT_ID=
+ENV OIDC_CLIENT_SECRET=
+ENV OIDC_COOKIE_DOMAIN=localhost
+```
+
+Run docker exposing port 8080
+
+```
+docker build . -t members && docker run -it -p 8080:8080 members
+```
+
 ### Pull Requests
 If you have an idea for a feature or have a bug that you'd like to fix, please fork this repo to a private repo of your own. If your contribution is more than some small tweak, create a branch. Do your thing, and then submit a pull request.
 
