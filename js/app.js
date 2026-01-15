@@ -37,7 +37,7 @@ app.filter("sortDate", function(){
         relativeDay--;
       }
       if (relativeDay < 0) {
-        relativeDay = relativeDay + 5 + today;
+        relativeDay = relativeDay + 7;
       }
 
       if (relativeDay > 0) {
