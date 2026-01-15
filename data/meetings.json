@@ -6,44 +6,39 @@
     "lengthMinutes": 90
   },
   {
-    "name": "OpComm",
+    "name": "History",
     "day": "MON",
-    "time": "8:30"
+    "time": "6:00"
   },
   {
-    "name": "Social",
+    "name": "History Discussion",
     "day": "MON",
-    "time": "8:00"
-  },
-  {
-    "name": "IMPS 1",
-    "day": "TUE",
-    "time": "5:30"
+    "time": "6:30"
   },
   {
     "name": "Evals",
+    "day": "MON",
+    "time": "7:30"
+  },
+  {
+    "name": "IMPs",
     "day": "TUE",
-    "time": "6:00"
+    "time": "6:30"
+  },
+  {
+    "name": "R&D",
+    "day": "TUE",
+    "time": "7:30"
   },
   {
     "name": "Financial",
     "day": "TUE",
-    "time": "6:30"
-  },
-  {
-    "name": "History",
-    "day": "WED",
-    "time": "6:30"
-  },
-  {
-    "name": "History Discussion",
-    "day": "WED",
-    "time": "7:00"
+    "time": "8:30"
   },
   {
     "name": "Eboard",
     "day": "WED",
-    "time": "8:15"
+    "time": "6:30"
   },
   {
     "name": "PR",
@@ -51,28 +46,53 @@
     "time": "5:30"
   },
   {
-    "name": "R&D",
+    "name": "Cleaning Crew",
     "day": "THU",
-    "time": "6:00"
+    "time": "6:30"
   },
   {
-    "name": "IMPS 2",
+    "name": "OpComm",
+    "day": "THU",
+    "time": "8:15"
+  },
+  {
+    "name": "Social",
     "day": "FRI",
-    "time": "7:30"
+    "time": "6:30"
   },
   {
     "name": "Caption Glasses",
     "day": "MON",
-    "time": "7:00"
-  },
-  {
-    "name": "Bits 'n Bytes",
-    "day": "TUE",
-    "time": "7:30"
+    "time": "8:30"
   },
   {
     "name": "Devcade",
-    "day": "TUE",
-    "time": "8:00"
+    "day": "MON",
+    "time": "9:00"
+  },
+  {
+    "name": "Open Sauce",
+    "day": "THU",
+    "time": "7:00"
+  },
+  {
+    "name": "Yearbook",
+    "day": "THU",
+    "time": "7:30"
+  },
+  {
+    "name": "50th",
+    "day": "FRI",
+    "time": "5:00"
+  },
+  {
+    "name": "Kilobyte",
+    "day": "FRI",
+    "time": "7:30"
+  },
+  {
+    "name": "Bits 'n Bytes",
+    "day": "TBD",
+    "time": "TBD"
   }
 ]
