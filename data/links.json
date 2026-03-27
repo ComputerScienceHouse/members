@@ -93,6 +93,11 @@
         "name": "Game Night",
         "href": "https://game-night.csh.rit.edu",
         "icon": "foundation:die-three"
+      },
+      {
+        "name": "Plex Catalog",
+        "href": "https://plex.csh.rit.edu",
+        "icon": "material:movie"
       }
     ]
   },
@@ -190,11 +195,6 @@
       	"name": "Pings",
       	"href": "https://pings.csh.rit.edu",
       	"icon": "material:add-alert"
-      },
-      {
-        "name": "CatJam",
-        "href": "https://catjam.csh.rit.edu",
-        "icon": "webhostinghub:cat"
       }
     ]
   },
