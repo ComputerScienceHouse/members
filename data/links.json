@@ -93,6 +93,11 @@
         "name": "Game Night",
         "href": "https://game-night.csh.rit.edu",
         "icon": "foundation:die-three"
+      },
+      {
+        "name": "Plex Catalog",
+        "href": "https://plex.csh.rit.edu",
+        "icon": "material:movie"
       }
     ]
   },
