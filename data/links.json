@@ -159,7 +159,7 @@
       {
         "name": "Password Vault",
         "href": "https://vault.csh.rit.edu",
-        "icon": "material:encrypted"
+        "icon": "material:lock"
       },
       {
         "name": "Theme Switcher",
