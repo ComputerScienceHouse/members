@@ -2,76 +2,97 @@
   {
     "name": "House",
     "day": "SUN",
-    "time": "7:15"
+    "time": "7:15",
+    "lengthMinutes": 90
+  },
+  {
+    "name": "History",
+    "day": "MON",
+    "time": "6:00"
+  },
+  {
+    "name": "History Discussion",
+    "day": "MON",
+    "time": "6:30"
+  },
+  {
+    "name": "Evals",
+    "day": "MON",
+    "time": "7:30"
+  },
+  {
+    "name": "IMPs",
+    "day": "TUE",
+    "time": "6:30"
   },
   {
     "name": "R&D",
-    "day": "WED",
-    "time": "8:00"
+    "day": "TUE",
+    "time": "7:30"
   },
   {
     "name": "Financial",
     "day": "TUE",
-    "time": "8:00"
+    "time": "8:30"
   },
   {
     "name": "Eboard",
-    "day": "THU",
-    "time": "7:00"
-  },
-  {
-    "name": "OpComm",
-    "day": "MON",
+    "day": "WED",
     "time": "6:30"
   },
   {
     "name": "PR",
-    "day": "WED",
-    "time": "6:00"
-  },
-  {
-    "name": "IMPS",
-    "day": "MON",
-    "time": "8:00"
-  },
-  {
-    "name": "Evals",
-    "day": "TUE",
-    "time": "8:00"
-  },
-  {
-    "name": "History",
-    "day": "TUE",
-    "time": "6:30"
-  },
-  {
-    "name": "History Discussion",
-    "day": "TUE",
-    "time": "7:00"
-  },
-  {
-    "name": "Social",
-    "day": "FRI",
-    "time": "7:00"
-  },
-  {
-    "name": "Devcade",
-    "day": "TUE",
-    "time": "9:00"
-  },
-  {
-    "name": "3DA",
-    "day": "MON",
-    "time": "6:00"
-  },
-  {
-    "name": "CSHacks",
     "day": "THU",
     "time": "5:30"
   },
   {
-    "name": "Bits 'n Bytes",
-    "day": "WED",
+    "name": "Cleaning Crew",
+    "day": "THU",
+    "time": "6:30"
+  },
+  {
+    "name": "OpComm",
+    "day": "THU",
+    "time": "8:15"
+  },
+  {
+    "name": "Social",
+    "day": "FRI",
+    "time": "6:30"
+  },
+  {
+    "name": "Caption Glasses",
+    "day": "MON",
+    "time": "8:30"
+  },
+  {
+    "name": "Devcade",
+    "day": "MON",
     "time": "9:00"
+  },
+  {
+    "name": "Open Sauce",
+    "day": "THU",
+    "time": "7:00"
+  },
+  {
+    "name": "Yearbook",
+    "day": "THU",
+    "time": "7:30"
+  },
+  {
+    "name": "50th",
+    "day": "FRI",
+    "time": "5:00"
+  },
+  {
+    "name": "Kilobyte",
+    "day": "FRI",
+    "time": "7:30"
+  },
+  {
+    "name": "Bits 'n Bytes",
+    "day": "TBD",
+    "time": "TBD"
   }
 ]

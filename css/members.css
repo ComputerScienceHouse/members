@@ -2,6 +2,10 @@ body {
   padding-top: 76px;
   padding-bottom: 20px;
 }
+button.nav-link {
+  background-color: inherit;
+  border: inherit;
+}
 .center {
   text-align: center;
 }
