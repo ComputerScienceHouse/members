@@ -157,6 +157,11 @@
         "popular": true
       },
       {
+        "name": "Password Vault",
+        "href": "https://vault.csh.rit.edu",
+        "icon": "material:lock"
+      },
+      {
         "name": "Theme Switcher",
         "href": "https://themeswitcher.csh.rit.edu",
         "icon": "material:filter"
