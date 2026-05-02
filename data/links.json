@@ -93,6 +93,11 @@
         "name": "Game Night",
         "href": "https://game-night.csh.rit.edu",
         "icon": "foundation:die-three"
+      },
+      {
+        "name": "Plex Catalog",
+        "href": "https://plex.csh.rit.edu",
+        "icon": "material:movie"
       }
     ]
   },
@@ -152,6 +157,11 @@
         "popular": true
       },
       {
+        "name": "Password Vault",
+        "href": "https://vault.csh.rit.edu",
+        "icon": "material:lock"
+      },
+      {
         "name": "Theme Switcher",
         "href": "https://themeswitcher.csh.rit.edu",
         "icon": "material:filter"
@@ -190,11 +200,6 @@
       	"name": "Pings",
       	"href": "https://pings.csh.rit.edu",
       	"icon": "material:add-alert"
-      },
-      {
-        "name": "CatJam",
-        "href": "https://catjam.csh.rit.edu",
-        "icon": "webhostinghub:cat"
       }
     ]
   },
