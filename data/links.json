@@ -57,6 +57,11 @@
         "href": "https://discourse.csh.rit.edu",
         "icon": "material:forum",
         "popular": true
+      },
+      {
+        "name": "Vote",
+        "href": "https://vote.csh.rit.edu",
+        "icon": "fa:ticket"
       }
     ]
   },
@@ -200,6 +205,11 @@
       	"name": "Pings",
       	"href": "https://pings.csh.rit.edu",
       	"icon": "material:add-alert"
+      },
+      {
+        "name": "Grimoire",
+        "href": "https://grimoire.csh.rit.edu",
+        "icon": "fa:book"
       }
     ]
   },
