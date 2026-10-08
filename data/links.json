@@ -98,6 +98,16 @@
         "name": "Plex Catalog",
         "href": "https://plex.csh.rit.edu",
         "icon": "material:movie"
+      },
+      {
+        "name": "Archipelago",
+        "href": "https://archipelago.csh.rit.edu",
+        "icon": "material:gamepad"
+      },
+      {
+        "name": "Grimoire",
+        "href": "https://grimoire.csh.rit.edu",
+        "icon": "fa:book"
       }
     ]
   },
@@ -146,11 +156,6 @@
         "icon": "material:computer"
       },
       {
-        "name": "Webcomics",
-        "href": "https://c-yank.csh.rit.edu",
-        "icon": "material:view-compact"
-      },
-      {
         "name": "Slack",
         "href": "https://cshrit.slack.com",
         "icon": "fa:slack",
@@ -170,11 +175,6 @@
         "name": "Ride Board",
         "href": "https://rideboard.csh.rit.edu/",
         "icon": "material:directions-car"
-      },
-      {
-        "name": "Slate",
-        "href": "https://slate.csh.rit.edu/",
-        "icon": "fa:calendar-check-o"
       },
       {
         "name": "LetMeIn",
@@ -200,6 +200,11 @@
       	"name": "Pings",
       	"href": "https://pings.csh.rit.edu",
       	"icon": "material:add-alert"
+      },
+      {
+        "name": "Vote",
+        "href": "https://vote.csh.rit.edu",
+        "icon": "fa:ticket"
       }
     ]
   },
