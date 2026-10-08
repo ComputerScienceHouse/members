@@ -103,6 +103,11 @@
         "name": "Plex Catalog",
         "href": "https://plex.csh.rit.edu",
         "icon": "material:movie"
+      },
+      {
+        "name": "Archipelago",
+        "href": "https://archipelago.csh.rit.edu",
+        "icon": "material:gamepad"
       }
     ]
   },
