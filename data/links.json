@@ -108,6 +108,11 @@
         "name": "Grimoire",
         "href": "https://grimoire.csh.rit.edu",
         "icon": "fa:book"
+      },
+      {
+        "name": "CatJam",
+        "href": "https://catjam.csh.rit.edu",
+        "icon": "webhostinghub:cat"
       }
     ]
   },
