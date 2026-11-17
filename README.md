@@ -7,21 +7,14 @@ Contributing
 ------------
 
 ### Local development
-Set the env variables in your favorite way (I just put them with `ENV VAR_NAME=VALUE` in dockerfile, there might be a better way but idk; be careful not to commit them though)
+Copy the .env.example to .env and add the relevant credentials (OIDC for dev) which can be found on the wiki [wiki.csh.rit.edu/wiki/SSO](https://wiki.csh.rit.edu/wiki/SSO)
 
-Ask an RTP for OIDC creds, setting the cookie domain to localhost is needed because that's the domain it stores the cookies for and it freaks out if the domain isn't the same as the server name.
-```
-ENV SERVER_NAME=localhost:8080
-ENV HTTP_SCHEME=http
-ENV OIDC_CLIENT_ID=
-ENV OIDC_CLIENT_SECRET=
-ENV OIDC_COOKIE_DOMAIN=localhost
-```
+Setting the cookie domain to localhost is needed because that's the domain it stores the cookies for and it freaks out if the domain isn't the same as the server name.
 
-Run docker exposing port 8080
+Run using docker or podman with the command below.
 
-```
-docker build . -t members && docker run -it -p 8080:8080 members
+```bash
+podman compose up
 ```
 
 ### Pull Requests

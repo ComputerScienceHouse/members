@@ -1,0 +1,9 @@
+services:
+  members:
+    build: .
+    container_name: members
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8080:8080"
